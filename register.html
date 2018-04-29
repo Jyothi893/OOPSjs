@@ -1,0 +1,23 @@
+﻿<form name="f1" action="Registersucessfully.html" onsubmit="return validateReg()">
+    Name: <input type="text" name="name"/><br />
+    LastName: <input type="text" name="lastName"/><br />
+    <input type="submit" value="register"/>
+</form>
+<script>
+    function validateReg()
+    {
+        var name = document.f1.name.value;
+        var lastName = document.f1.lastName.value;
+        if (name == null || name == "") {
+            alert("pls enter the name");
+            //fn.focus();
+            return false;
+        } 
+        if(lastName == 0)
+        {
+            alert("pls enter the Lastname");
+            //fn.focus();
+            return false;
+        }
+    }
+</script>

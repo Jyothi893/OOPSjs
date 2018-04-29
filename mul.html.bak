@@ -1,0 +1,15 @@
+<script>
+var x=10;
+  var y=30,z;
+ 
+function mul()
+{
+z=x*y;
+  
+ 
+document.write(z);
+}
+mul();
+
+</script>
+<p> another way of adding two numbers using script</p>

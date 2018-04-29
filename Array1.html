@@ -1,0 +1,36 @@
+<!--<script>  
+emp={id:102,
+name:"Shyam Kumar",
+salary:40000,
+vehical:["bike","car","bus"]
+};
+document.write(emp.id+" "+emp.name+" "+emp.salary +" "+emp.vehical);  
+</script>  -->
+<form action="Registersucessfully.html">
+    First Name:
+    <input type='text' name='firstName'> </br>
+
+
+
+    Last Name:
+    <input type='password' name='lastName'></br>
+    <input type='submit' value='submit' onclick='return validateReg()'> </br>
+</form>
+
+<script>
+
+    function validateReg() {
+        var form = document.forms[0];
+        var fn = form.firstName;
+        if (fn.value.length == 0) {
+            alert("pls enter First name");
+            fn.focus();
+            return false;
+        }
+        var ln = form.lastName;
+        if (ln.value.length == 0) {
+            alert("pls enter Love name");
+            ln.focus();
+           
+        }
+</script>
